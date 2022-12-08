@@ -1,0 +1,39 @@
+.TH man_1_simple_shell
+
+.SH NAME
+.B Shell: Que hace?
+
+.SH SYNOPSIS
+#include "main.h"
+.br
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The C shell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The C shell can also read commands from a file, called a script.
+
+.B Conversion specifiers
+.br
+A character that specifies the type of conversion to be applied.
+.br
+The conversion specifiers and their meanings are:
+.TP
+c - Print ARGUMENT of character type
+.TP
+s - Print ARGUMENT of string type
+
+.TP
+%% - Prints a single %
+
+.TP
+d - Print ARGUMENT of decimal type
+
+.TP
+i - Print ARGUMENT of type integer
+
+.SH RETURN VALUE
+If the function completes successfully, it returns the number of characters printed.
+.br
+Otherwise it returns -1.
+
+.SH AUTHOR
+.B Written by Nicolás Hernández and Lucas Soria.
