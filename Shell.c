@@ -8,10 +8,9 @@ int main(void)
 	char *buff, *b = NULL;
 	size_t bufsize = 32;
 	size_t characters;
-	char *argv[] = {"/bin/ls", "/usr/", NULL};
+	char *argv[bufsize];
 	int status;
 	struct stat sb;
-	//char * token = strtok(buffer, " ");
 
 	while (1)
 	{
@@ -23,8 +22,12 @@ int main(void)
 			break;
 		}
 
-		buff = strtok(b, "\n");
-		argv[1] = NULL;
+		buff = strtok(b, " \n");
+		
+		while (b != NULL)
+		{
+			b = strtok(NULL, " ");
+		}
 
 		pidc = fork();
 		wait(&status);
