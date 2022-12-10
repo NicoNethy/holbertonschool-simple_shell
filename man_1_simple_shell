@@ -9,13 +9,31 @@ int _printf(const char *format, ...);
 .SH DESCRIPTION
 The SimpleShell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The SimpleShell can also read commands from a file, called a script.
 
-.B Conversion specifiers
+.SH SYNOPSIS
+.B Libraries
 .br
-A character that specifies the type of conversion to be applied.
+#include <stdio.h>
 .br
-The conversion specifiers and their meanings are:
+#include <stdlib.h>
+.br
+#include <unistd.h>
+.br
+#include <sys/wait.h>
+.br
+#include <sys/types.h>
+.br
+#include <string.h>
+.br
+#include <sys/stat.h>
+.br
+
+.B Command
+.br
+Is a directive to a computer program to perform a specific task.
+.br
+For example this are some commands with their full PATH that can be executed:
 .TP
-c - Print ARGUMENT of character type
+pwd - Print working directory
 
 .TP
 s - Print ARGUMENT of string type
