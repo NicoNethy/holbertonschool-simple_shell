@@ -8,10 +8,10 @@ int main(void)
 	pid_t pidc;
 	char *token, *b = NULL;
 	size_t bufsize = 32;
-	size_t characters;
 	char *argv[bufsize];
 	int status;
 	struct stat sb;
+	char **creatematriz(char **m, char *b, const char " \n", int ntoken)
 
 	while (1)
 	{
