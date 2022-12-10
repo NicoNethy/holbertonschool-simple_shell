@@ -8,6 +8,11 @@
 #include <string.h>
 #include <sys/stat.h>
 int main();
+
+char **creatematriz(char **m, char *tokenizar, const char *delim, int ntoken);
+
+extern char **environ;
+char *_getenv(const char *name);
 #endif
 
 

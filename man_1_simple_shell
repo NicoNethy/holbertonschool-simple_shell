@@ -1,15 +1,13 @@
-.TH man_1_simple_shell
-
+.TH
 .SH NAME
-.B Shell: Que hace?
-
+SimpleShell
 .SH SYNOPSIS
 #include "main.h"
 .br
 int _printf(const char *format, ...);
 
 .SH DESCRIPTION
-The C shell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The C shell can also read commands from a file, called a script.
+The SimpleShell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The SimpleShell can also read commands from a file, called a script.
 
 .B Conversion specifiers
 .br
@@ -18,6 +16,7 @@ A character that specifies the type of conversion to be applied.
 The conversion specifiers and their meanings are:
 .TP
 c - Print ARGUMENT of character type
+
 .TP
 s - Print ARGUMENT of string type
 
@@ -34,6 +33,7 @@ i - Print ARGUMENT of type integer
 If the function completes successfully, it returns the number of characters printed.
 .br
 Otherwise it returns -1.
+
 
 .SH AUTHOR
 .B Written by Nicolás Hernández and Lucas Soria.

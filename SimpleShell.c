@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- *
+ * main - its the shell
+ * Return: it works
  */
 int main(void)
 {
 	pid_t pidc;
-	char *buff, *b = NULL;
+	char *token, *b = NULL;
 	size_t bufsize = 32;
 	size_t characters;
 	char *argv[bufsize];
@@ -15,28 +16,21 @@ int main(void)
 	while (1)
 	{
 		printf("$ ");
-
 		if (getline(&b, &bufsize, stdin) == -1)
 		{
 			printf("\n");
 			break;
 		}
 
-		buff = strtok(b, " \n");
-		
-		while (b != NULL)
-		{
-			b = strtok(NULL, " ");
-		}
-
+		token = strtok(b, " \n");
 		pidc = fork();
 		wait(&status);
 
 		if (pidc == 0)
 		{
-			if (stat(buff, &sb) == 0)
+			if (stat(token, &sb) == 0)
 			{
-				execve(buff, argv, NULL);
+				execve(token, argv, NULL);
 			}
 			else
 			{
@@ -49,5 +43,6 @@ int main(void)
 			printf("Error de forkeo\n");
 		}
 	}
+	free(b);
 	return (0);
 }
