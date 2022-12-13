@@ -3,7 +3,7 @@
 ### Description
 The C shell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The C shell can also read commands from a file, called a script. In this project a shell is emulated with its basic functions.
 
-### Comandos
+### Commands
 
 | Name | Function |
 | --- | --- |
@@ -29,7 +29,7 @@ No more than 5 functions per file
 - ``stat`` Function gets status information about a specified file and places it in the area of memory pointed to by the buf argument.
 - ``isatty`` Takes a file descriptor as a parameter and returns 1 if that file descriptor is associated with a terminal.
 
-### Funciones creadas
+### Created functions
 - ``_getenv`` Returns a null-terminated string with the value of the requested environment variable, or NULL if that environment variable does not exist.
 - ``_strcat:`` The function concatenates string2 to string1 and ends the resulting string with the null character.
 - ``_strcmp:`` Compares two strings character by character.
