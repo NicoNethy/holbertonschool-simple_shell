@@ -31,9 +31,7 @@ int main(void)
 				execve(token, argv, NULL);
 			}
 			else
-			{
 				break;
-			}
 		}
 		if (pidc == -1)
 		{
@@ -41,8 +39,10 @@ int main(void)
 		}
 		if (_strcmp(b, "exit") == 0)
 		{
-			free(b), return (0);
+			free(b);
+			return (0);
 		}
 	}
-	free(b), return (0);
+	free(b);
+	return (0);
 }
