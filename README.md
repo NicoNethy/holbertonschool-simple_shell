@@ -1,7 +1,7 @@
 # Proyect Shell
 
 ### Description
-The C shell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The C shell can also read commands from a file, called a script.
+The C shell is a command processor which is typically run in a text window, allowing the user to type and execute commands. The C shell can also read commands from a file, called a script. In this project a shell is emulated with its basic functions.
 
 ### Comandos
 
@@ -22,13 +22,13 @@ All your files should end with a new line
 
 No more than 5 functions per file
 
-### Funciones utilizadas
+### Functions used
 - ``execve`` Executes the program referred to by pathname.
-- ``fork``
-- ``wait``
-- ``getline``
-- ``stat``
-- ``isatty``
+- ``fork`` System call is used for creating a new process, which is called child process, which runs concurrently with the process that makes the fork call. 
+- ``wait`` Blocks the calling process until one of its child processes exits or a signal is received.
+- ``getline`` The getline function takes three arguments and returns the number of characters we entered.
+- ``stat`` Function gets status information about a specified file and places it in the area of memory pointed to by the buf argument.
+- ``isatty`` Takes a file descriptor as a parameter and returns 1 if that file descriptor is associated with a terminal.
 
 ### Funciones creadas
 - ``_getenv`` Returns a null-terminated string with the value of the requested environment variable, or NULL if that environment variable does not exist.
