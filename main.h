@@ -7,23 +7,20 @@
 #include <sys/types.h>
 #include <string.h>
 #include <sys/stat.h>
-int main();
+
 
 char **creatematriz(char **m, char *tokenizar, const char *delim, int ntoken);
 
 extern char **environ;
+
 char *_getenv(const char *name);
+
+char *_strcat(char *dest, char *src);
+
+int _strcmp(char *s1, char *s2);
+
+char *_strdup(char *str);
+
+char *_getcommand(char *path, char *command);
+
 #endif
-
-
-
-
-
-
-
-
-
-
-
-
-
