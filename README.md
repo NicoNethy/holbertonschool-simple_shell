@@ -5,13 +5,12 @@ The C shell is a command processor which is typically run in a text window, allo
 
 ### Comandos
 
-| Type | Function |
+| Name | Function |
 | --- | --- |
-| pwd | Print working directory |
-| ls | List files and directory |
-| ? | Incertar descripción |
-| ? | Incertar descripción |
-| ? | Incertar descripción |
+| pwd | Print working directory. |
+| ls | List files and directory. |
+| hostname | Is used to obtain the DNS(Domain Name System) name. |
+| exit | The command causes the shell or program to terminate. |
 
 ### Requirements
 Allowed editors: vi, vim, emacs
