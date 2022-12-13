@@ -43,4 +43,5 @@ No more than 5 functions per file
 - **man_1_simple_shell:** ``shell`` manual.
 
 ### Flowcharts
-![Untitled](https://user-images.githubusercontent.com/44532670/207222293-7af67bce-0a65-478b-9c9f-3271d0d53808.jpg)
+![ssss drawio](https://user-images.githubusercontent.com/44532670/207383966-dfe2e724-d3d6-444b-9381-d7cf614724ea.png)
+
