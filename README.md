@@ -42,7 +42,7 @@ No more than 5 functions per file
 - **main.h:** Contains function libraries and prototypes
 - **man_1_simple_shell:** ``shell`` manual.
 
-### Flowcharts
+### Flowchart
 
-![ssss](https://user-images.githubusercontent.com/44532670/207385250-249dc4ed-e868-4c0d-8654-cd234e2154d8.jpg)
+![ssss (1)](https://user-images.githubusercontent.com/44532670/207387094-4296593d-86da-4474-ba60-58b7466e2782.jpg)
 
