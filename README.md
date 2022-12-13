@@ -37,10 +37,10 @@ No more than 5 functions per file
 - ``_strdup:`` Function returns a pointer to a new string which is a duplicate of the string.
 
 ### Files that make up our Shell
-- **SimpleShell:** dsfsfs
-- **aux_function.c:** efsd
-- **forbidden_functions.c:** dsfdsfs
-- **main.h:** gddgdg
+- **SimpleShell:** Program to be run to start the shell
+- **aux_function.c:** Functions executed by the shell for its operation
+- **forbidden_functions.c:** Duplication of str functions
+- **main.h:** Contains function libraries and prototypes
 - **man_1_simple_shell:** ``shell`` manual.
 
 ### Flowcharts
