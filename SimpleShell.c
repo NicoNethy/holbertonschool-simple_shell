@@ -8,7 +8,7 @@ int main(void)
 	pid_t pidc;
 	char *token, *b = NULL;
 	size_t bufsize = 32;
-	char *argv[bufsize];
+	char **av;
 	int status;
 	struct stat sb;
 
@@ -22,13 +22,21 @@ int main(void)
 			break;
 		}
 		token = strtok(b, " \n");
+		av = malloc(1024);
+		av[0] = token;
+		token = strtok(NULL, " \n");
+		av[1] = token;
+		token = strtok(NULL, " \n");
+		av[2] = token;
 		pidc = fork();
 		wait(&status);
 		if (pidc == 0)
 		{
-			if (stat(token, &sb) == 0)
+			puts("Hola");
+			if (stat(av[0], &sb) == 0)
 			{
-				execve(token, argv, NULL);
+				puts("Chau");
+				execve(av[0], av, NULL);
 			}
 			else
 				break;
