@@ -47,7 +47,7 @@ int main(void)
 		if (_strcmp(b, "exit") == 0)
 		{
 			free(b);
-			return (0);
+			return (2);
 		}
 	}
 	free(av);
