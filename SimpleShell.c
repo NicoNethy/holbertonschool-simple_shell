@@ -32,15 +32,14 @@ int main(void)
 		wait(&status);
 		if (pidc == 0)
 		{
-			puts("Hola");
 			if (stat(av[0], &sb) == 0)
 			{
-				puts("Chau");
 				execve(av[0], av, NULL);
 			}
 			else
 				break;
 		}
+		free(av);
 		if (pidc == -1)
 		{
 			printf("Error de forkeo\n");
@@ -51,6 +50,7 @@ int main(void)
 			return (0);
 		}
 	}
+	free(av);
 	free(b);
 	return (0);
 }
